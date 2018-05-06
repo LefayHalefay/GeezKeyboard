@@ -1,0 +1,898 @@
+<html lang="en">
+  <head>
+    <title>Tigrigna Keyboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/Fidelat.js"></script>
+  </head>
+  <body style="background-color: white;">
+    <div style="background-color:#5F5F5F; margin-top:1%; margin-left: 1%; margin-right: 1%; padding-top: 1%; padding-bottom: 2%; color:floralwhite;"> 
+        <h3 style="margin-top:1%; margin-left: 1%; margin-right: 1%;">Tigrigna Keyboard</h3>
+        <!-- <p>Type English letters, and they will start appearing in Geez Alphabets:</p> -->
+    </div>
+    <div style="margin-top:1%; margin-left: 1%; margin-right: 1%; padding-top: 1%;"> 
+        <div  class="container">
+            <div style="margin-top:1%;">
+                <label for="comment"> &#x1230;&#x1293;&#x12ED;&nbsp;&#x121D;&#x133D;&#x1213;&#x134D;:</label>
+                <textarea autofocus rows="4" id="commentt"></textarea>
+                <input autofocus rows="5" type="text" id="comment"> </input>
+            </div>
+              <div class="row">
+                <div style="padding-right: 3.5%;" id="fidel_dropdown" class="col-4">
+                    <select>
+                      <option value="Fidel_HE">&#160;&#x1200;</option>
+                      <option value="Fidel_LE">&#x1208;</option>
+                      <option value="Fidel_HHE">&#x1210;</option>
+                      <option value="Fidel_ME">&#x1218;</option>
+                      <option value="Fidel_SSE">&#x1220;</option>
+                      <option value="Fidel_RE">&#x1228;</option>
+                      <option value="Fidel_SE">&#x1230;</option>
+                      <option value="Fidel_SHE">&#x1238;</option>
+                      <option value="Fidel_QE">&#x1240;</option>
+                      <option value="Fidel_QHE">&#x1250;</option>
+                      <option value="Fidel_BE">&#x1260;</option>
+                      <option value="Fidel_VE">&#x1268;</option>
+                      <option value="Fidel_TE">&#x1270;</option>
+                      <option value="Fidel_CE">&#x1278;</option>
+                      <option value="Fidel_NE">&#x1290;</option>
+                      <option value="Fidel_NGE">&#x1298;</option>
+                      <option value="Fidel_EE">&#x12A0;</option>
+                      <option value="Fidel_KE">&#x12A8;</option>
+                      <option value="Fidel_KHE">&#x12B8;</option>
+                      <option value="Fidel_WE">&#x12C8;</option>
+                      <option value="Fidel_EHE">&#x12D0;</option>
+                      <option value="Fidel_ZE">&#x12D8;</option>
+                      <option value="Fidel_ZHE">&#x12E0;</option>
+                      <option value="Fidel_YE">&#x12E8;</option>
+                      <option value="Fidel_DE">&#x12F0;</option>
+                      <option value="Fidel_JE">&#x1300;</option>
+                      <option value="Fidel_GE">&#x1308;</option>
+                      <option value="Fidel_THE">&#x1320;</option>
+                      <option value="Fidel_CHE">&#x1328;</option>
+                      <option value="Fidel_PHE">&#x1330;</option>
+                      <option value="Fidel_TSE">&#x1338;</option>
+                      <option value="Fidel_TZE">&#x1340;</option>
+                      <option value="Fidel_FE">&#x1348;</option>
+                      <option value="Fidel_PE">&#x1350;</option>
+                    </select>
+                </div>
+                <div style="padding-left: 0.4%;" class="col-5"> 
+                    <button id="clickForSpace" class="btn btn-primary" type="button">Space</button> 
+                </div>
+                <div id="clickForCopy"style="padding-left: 0.1%;" class="col-3"> 
+                  <button class="btn btn-primary" type="button">Copy</button> 
+                </div>
+                <div class="container btn-group">
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_First" value="Fidel_First" class="btn btn-primary" type="button">&#x1200;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Second" value="Fidel_Second" class="btn btn-primary" type="button">&#x1201;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Third" value="Fidel_Third" class="btn btn-primary" type="button">&#x1202;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Fourth" value="Fidel_Fourth" class="btn btn-primary" type="button">&#x1203;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Fifth" value="Fidel_Fifth" class="btn btn-primary" type="button">&#x1204;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Sixth" value="Fidel_Sixth" class="btn btn-primary" type="button">&#x1205;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Seventh" value="Fidel_Seventh" class="btn btn-primary" type="button">&#x1206;</button> </div>
+                </div>
+                <div id ="Fidelat_Special" class="container btn-group">
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Eighth" class="btn btn-primary" type="button">&#x1200;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Ninth" class="btn btn-primary" type="button">&#x1201;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Tenth" class="btn btn-primary" type="button">&#x1202;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Eleventh" class="btn btn-primary" type="button">&#x1203;</button> </div>
+                    <div style="padding-right: 0.4%;"><button id ="Fidel_Twelfth" class="btn btn-primary" type="button">&#x1204;</button> </div>
+                </div>
+              </div> <!--Row Ends Here-->
+        </div> <!-- Container Ends Here-->
+    </div>
+  </body>
+</html>
+<style>
+.ui-btn-text{  
+  font-size: 92% !important; 
+}
+</style>
+<script>
+
+$(function() {
+  $( "#dialog" ).dialog();
+});
+
+  // Fidel is a word for letter in Tigrigna and Amharic
+  // Fidelat is the plural of Fidel.
+
+  var twoFidelat = [];
+  var threeFidelat = [];
+  var fourFidelat = [];
+  var fiveFidelat = [];
+  var tempoFidel;
+  var displayFidelat = [];
+  var cleanedUpFidel = [];
+
+  var $htmlOrBody = $('html, body'), // scrollTop works on <body> for some browsers, <html> for others
+    scrollTopPadding = 8;
+
+  $('textarea').focus(function() {
+    // get textarea's offset top position
+    var textareaTop = $(this).offset().top;
+    // scroll to the textarea
+    $htmlOrBody.scrollTop(textareaTop - scrollTopPadding);
+  });
+
+  // Hide Special Letters
+  $('#Fidelat_Special').hide();
+  $(document).ready(function(){
+  
+    $("#fidel_dropdown").change(function(){
+      /*
+        The Fidel Faimilies of ME and HHE Tend to be a bit wider, 
+        so they are made a bit samller inorder to fit nicely in the button.
+      */
+        $('#Fidel_First').removeClass("ui-btn-text");
+        $('#Fidel_Second').removeClass("ui-btn-text");
+        $('#Fidel_Third').removeClass("ui-btn-text");
+        $('#Fidel_Fourth').removeClass("ui-btn-text");
+        $('#Fidel_Fifth').removeClass("ui-btn-text");
+        $('#Fidel_Sixth').removeClass("ui-btn-text");
+        $('#Fidel_Seventh').removeClass("ui-btn-text");
+        $('#Fidel_Eighth').removeClass("ui-btn-text");
+        $('#Fidel_Ninth').removeClass("ui-btn-text");
+        $('#Fidel_Tenth').removeClass("ui-btn-text");
+        $('#Fidel_Eleventh').removeClass("ui-btn-text");
+        $('#Fidel_Twelfth').removeClass("ui-btn-text");
+
+        var selectedFidelFamily = $('#fidel_dropdown :selected').val();
+
+        if(selectedFidelFamily === "Fidel_HE"){
+          $('#Fidel_First').text(HE);
+          $('#Fidel_Second').text(HU);
+          $('#Fidel_Third').text(HI);
+          $('#Fidel_Fourth').text(HA);
+          $('#Fidel_Fifth').text(HIE);
+          $('#Fidel_Sixth').text(HH);
+          $('#Fidel_Seventh').text(HO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_LE"){
+          $('#Fidel_First').text(LE);
+          $('#Fidel_Second').text(LU);
+          $('#Fidel_Third').text(LI);
+          $('#Fidel_Fourth').text(LA);
+          $('#Fidel_Fifth').text(LIE);
+          $('#Fidel_Sixth').text(LL);
+          $('#Fidel_Seventh').text(LO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_HHE"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_First').text(HHE);
+          $('#Fidel_Second').text(HHU);
+          $('#Fidel_Third').text(HHI);
+          $('#Fidel_Fourth').text(HHA);
+          $('#Fidel_Fifth').text(HHIE);
+          $('#Fidel_Sixth').text(HHH);
+          $('#Fidel_Seventh').text(HHO);
+          $('#Fidelat_Special').hide();
+        } 
+        else if(selectedFidelFamily === "Fidel_ME"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_First').text(ME);
+          $('#Fidel_Second').text(MU);
+          $('#Fidel_Third').text(MI);
+          $('#Fidel_Fourth').text(MA);
+          $('#Fidel_Fifth').text(MIE);
+          $('#Fidel_Sixth').text(MM);
+          $('#Fidel_Seventh').text(MO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_SSE"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_First').text(SSE);
+          $('#Fidel_Second').text(SSU);
+          $('#Fidel_Third').text(SSI);
+          $('#Fidel_Fourth').text(SSA);
+          $('#Fidel_Fifth').text(SSIE);
+          $('#Fidel_Sixth').text(SSS);
+          $('#Fidel_Seventh').text(SSO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_RE"){
+          $('#Fidel_First').text(RE);
+          $('#Fidel_Second').text(RU);
+          $('#Fidel_Third').text(RI);
+          $('#Fidel_Fourth').text(RA);
+          $('#Fidel_Fifth').text(RIE);
+          $('#Fidel_Sixth').text(RR);
+          $('#Fidel_Seventh').text(RO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_SE"){
+          $('#Fidel_First').text(SE);
+          $('#Fidel_Second').text(SU);
+          $('#Fidel_Third').text(SI);
+          $('#Fidel_Fourth').text(SA);
+          $('#Fidel_Fifth').text(SIE);
+          $('#Fidel_Sixth').text(SS);
+          $('#Fidel_Seventh').text(SO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_SHE"){
+          $('#Fidel_First').text(SHE);
+          $('#Fidel_Second').text(SHU);
+          $('#Fidel_Third').text(SHI);
+          $('#Fidel_Fourth').text(SHA);
+          $('#Fidel_Fifth').text(SHIE);
+          $('#Fidel_Sixth').text(SH);
+          $('#Fidel_Seventh').text(SHO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_QE"){
+          $('#Fidelat_Special').show();
+          $('#Fidel_First').text(QE);
+          $('#Fidel_Second').text(QU);
+          $('#Fidel_Third').text(QI);
+          $('#Fidel_Fourth').text(QA);
+          $('#Fidel_Fifth').text(QIE);
+          $('#Fidel_Sixth').text(QQ);
+          $('#Fidel_Seventh').text(QO);
+          $('#Fidel_Eighth').text(QOH);
+          $('#Fidel_Ninth').text(QWI);
+          $('#Fidel_Tenth').text(QUA);
+          $('#Fidel_Eleventh').text(QWIE);
+          $('#Fidel_Twelfth').text(QWII);
+        }
+        else if(selectedFidelFamily === "Fidel_QHE"){
+          $('#Fidelat_Special').show();
+          $('#Fidel_First').text(QHE);
+          $('#Fidel_Second').text(QHU);
+          $('#Fidel_Third').text(QHI);
+          $('#Fidel_Fourth').text(QHA);
+          $('#Fidel_Fifth').text(QHIE);
+          $('#Fidel_Sixth').text(QH);
+          $('#Fidel_Seventh').text(QHO);
+          $('#Fidel_Eighth').text(QHOH);
+          $('#Fidel_Ninth').text(QHWI);
+          $('#Fidel_Tenth').text(QHUA);
+          $('#Fidel_Eleventh').text(QHWIE);
+          $('#Fidel_Twelfth').text(QHWII);
+        }
+        else if(selectedFidelFamily === "Fidel_BE"){
+          $('#Fidel_First').text(BE);
+          $('#Fidel_Second').text(BU);
+          $('#Fidel_Third').text(BI);
+          $('#Fidel_Fourth').text(BA);
+          $('#Fidel_Fifth').text(BIE);
+          $('#Fidel_Sixth').text(BB);
+          $('#Fidel_Seventh').text(BO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_VE"){
+          $('#Fidel_First').text(VE);
+          $('#Fidel_Second').text(VU);
+          $('#Fidel_Third').text(VI);
+          $('#Fidel_Fourth').text(VA);
+          $('#Fidel_Fifth').text(VIE);
+          $('#Fidel_Sixth').text(VV);
+          $('#Fidel_Seventh').text(VO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_TE"){
+          $('#Fidel_First').text(TE);
+          $('#Fidel_Second').text(TU);
+          $('#Fidel_Third').text(TI);
+          $('#Fidel_Fourth').text(TA);
+          $('#Fidel_Fifth').text(TIE);
+          $('#Fidel_Sixth').text(TT);
+          $('#Fidel_Seventh').text(TO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_CE"){
+          $('#Fidel_First').text(CE);
+          $('#Fidel_Second').text(CU);
+          $('#Fidel_Third').text(CI);
+          $('#Fidel_Fourth').text(CA);
+          $('#Fidel_Fifth').text(CIE);
+          $('#Fidel_Sixth').text(CC);
+          $('#Fidel_Seventh').text(CO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_NE"){
+          $('#Fidel_First').text(NE);
+          $('#Fidel_Second').text(NU);
+          $('#Fidel_Third').text(NI);
+          $('#Fidel_Fourth').text(NA);
+          $('#Fidel_Fifth').text(NIE);
+          $('#Fidel_Sixth').text(NN);
+          $('#Fidel_Seventh').text(NO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_NGE"){
+          $('#Fidel_First').text(NGE);
+          $('#Fidel_Second').text(NGU);
+          $('#Fidel_Third').text(NGI);
+          $('#Fidel_Fourth').text(NGA);
+          $('#Fidel_Fifth').text(NGIE);
+          $('#Fidel_Sixth').text(NG);
+          $('#Fidel_Seventh').text(NGO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_EE"){
+          $('#Fidel_First').text(EE);
+          $('#Fidel_Second').text(EU);
+          $('#Fidel_Third').text(EI);
+          $('#Fidel_Fourth').text(EA);
+          $('#Fidel_Fifth').text(EIE);
+          $('#Fidel_Sixth').text(EE);
+          $('#Fidel_Seventh').text(EO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_KE"){
+          $('#Fidelat_Special').show();
+          $('#Fidel_First').text(KE);
+          $('#Fidel_Second').text(KU);
+          $('#Fidel_Third').text(KI);
+          $('#Fidel_Fourth').text(KA);
+          $('#Fidel_Fifth').text(KIE);
+          $('#Fidel_Sixth').text(KK);
+          $('#Fidel_Seventh').text(KO);
+          $('#Fidel_Eighth').text(KWO);
+          $('#Fidel_Ninth').text(KWI);
+          $('#Fidel_Tenth').text(KUA);
+          $('#Fidel_Eleventh').text(KWE);
+          $('#Fidel_Twelfth').text(KWUE); 
+        }
+        else if(selectedFidelFamily === "Fidel_KHE"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_Eighth').addClass("ui-btn-text");
+          $('#Fidel_Ninth').addClass("ui-btn-text");
+          $('#Fidel_Tenth').addClass("ui-btn-text");
+          $('#Fidel_Eleventh').addClass("ui-btn-text");
+          $('#Fidel_Twelfth').addClass("ui-btn-text");
+          $('#Fidelat_Special').show();
+          $('#Fidel_First').text(KHE);
+          $('#Fidel_Second').text(KHU);
+          $('#Fidel_Third').text(KHI);
+          $('#Fidel_Fourth').text(KHA);
+          $('#Fidel_Fifth').text(KHIE);
+          $('#Fidel_Sixth').text(KH);
+          $('#Fidel_Seventh').text(KHO);
+          $('#Fidel_Eighth').text(KHWO);
+          $('#Fidel_Ninth').text(KHWI);
+          $('#Fidel_Tenth').text(KHUA);
+          $('#Fidel_Eleventh').text(KHWE);
+          $('#Fidel_Twelfth').text(KHWUE);
+        }
+        else if(selectedFidelFamily === "Fidel_WE"){
+          $('#Fidel_First').text(WE);
+          $('#Fidel_Second').text(WU);
+          $('#Fidel_Third').text(WI);
+          $('#Fidel_Fourth').text(WA);
+          $('#Fidel_Fifth').text(WIE);
+          $('#Fidel_Sixth').text(WW);
+          $('#Fidel_Seventh').text(WO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_EHE"){
+          $('#Fidel_First').text(EHE);
+          $('#Fidel_Second').text(EHU);
+          $('#Fidel_Third').text(EHI);
+          $('#Fidel_Fourth').text(EHA);
+          $('#Fidel_Fifth').text(EHIE);
+          $('#Fidel_Sixth').text(EH);
+          $('#Fidel_Seventh').text(EHO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_ZE"){
+          $('#Fidel_First').text(ZE);
+          $('#Fidel_Second').text(ZU);
+          $('#Fidel_Third').text(ZI);
+          $('#Fidel_Fourth').text(ZA);
+          $('#Fidel_Fifth').text(ZIE);
+          $('#Fidel_Sixth').text(ZZ);
+          $('#Fidel_Seventh').text(ZO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_ZHE"){
+          $('#Fidel_First').text(ZHE);
+          $('#Fidel_Second').text(ZHU);
+          $('#Fidel_Third').text(ZHI);
+          $('#Fidel_Fourth').text(ZHA);
+          $('#Fidel_Fifth').text(ZHIE);
+          $('#Fidel_Sixth').text(ZH);
+          $('#Fidel_Seventh').text(ZHO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_YE"){
+          $('#Fidel_First').text(YE);
+          $('#Fidel_Second').text(YU);
+          $('#Fidel_Third').text(YI);
+          $('#Fidel_Fourth').text(YA);
+          $('#Fidel_Fifth').text(YIE);
+          $('#Fidel_Sixth').text(YY);
+          $('#Fidel_Seventh').text(YO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_DE"){
+          $('#Fidel_First').text(DE);
+          $('#Fidel_Second').text(DU);
+          $('#Fidel_Third').text(DI);
+          $('#Fidel_Fourth').text(DA);
+          $('#Fidel_Fifth').text(DIE);
+          $('#Fidel_Sixth').text(DD);
+          $('#Fidel_Seventh').text(DO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_JE"){
+          $('#Fidel_First').text(JE);
+          $('#Fidel_Second').text(JU);
+          $('#Fidel_Third').text(JI);
+          $('#Fidel_Fourth').text(JA);
+          $('#Fidel_Fifth').text(JIE);
+          $('#Fidel_Sixth').text(JJ);
+          $('#Fidel_Seventh').text(JO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_GE"){
+          $('#Fidel_First').text(GE);
+          $('#Fidel_Second').text(GU);
+          $('#Fidel_Third').text(GI);
+          $('#Fidel_Fourth').text(GA);
+          $('#Fidel_Fifth').text(GIE);
+          $('#Fidel_Sixth').text(GG);
+          $('#Fidel_Seventh').text(GO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_THE"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_First').text(THE);
+          $('#Fidel_Second').text(THU);
+          $('#Fidel_Third').text(THI);
+          $('#Fidel_Fourth').text(THA);
+          $('#Fidel_Fifth').text(THIE);
+          $('#Fidel_Sixth').text(TH);
+          $('#Fidel_Seventh').text(THO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_CHE"){
+          $('#Fidel_First').addClass("ui-btn-text");
+          $('#Fidel_Second').addClass("ui-btn-text");
+          $('#Fidel_Third').addClass("ui-btn-text");
+          $('#Fidel_Fourth').addClass("ui-btn-text");
+          $('#Fidel_Fifth').addClass("ui-btn-text");
+          $('#Fidel_Sixth').addClass("ui-btn-text");
+          $('#Fidel_Seventh').addClass("ui-btn-text");
+          $('#Fidel_First').text(CHE);
+          $('#Fidel_Second').text(CHU);
+          $('#Fidel_Third').text(CHI);
+          $('#Fidel_Fourth').text(CHA);
+          $('#Fidel_Fifth').text(CHIE);
+          $('#Fidel_Sixth').text(CH);
+          $('#Fidel_Seventh').text(CHO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_PHE"){
+          $('#Fidel_First').text(PHE);
+          $('#Fidel_Second').text(PHU);
+          $('#Fidel_Third').text(PHI);
+          $('#Fidel_Fourth').text(PHA);
+          $('#Fidel_Fifth').text(PHIE);
+          $('#Fidel_Sixth').text(PH);
+          $('#Fidel_Seventh').text(PHO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_TSE"){
+          $('#Fidel_First').text(TSE);
+          $('#Fidel_Second').text(TSU);
+          $('#Fidel_Third').text(TSI);
+          $('#Fidel_Fourth').text(TSA);
+          $('#Fidel_Fifth').text(TSIE);
+          $('#Fidel_Sixth').text(TS);
+          $('#Fidel_Seventh').text(TSO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_TZE"){
+          $('#Fidel_First').text(TZE);
+          $('#Fidel_Second').text(TZU);
+          $('#Fidel_Third').text(TZI);
+          $('#Fidel_Fourth').text(TZA);
+          $('#Fidel_Fifth').text(TZIE);
+          $('#Fidel_Sixth').text(TZ);
+          $('#Fidel_Seventh').text(TZO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_FE"){
+          $('#Fidel_First').text(FE);
+          $('#Fidel_Second').text(FU);
+          $('#Fidel_Third').text(FI);
+          $('#Fidel_Fourth').text(FA);
+          $('#Fidel_Fifth').text(FIE);
+          $('#Fidel_Sixth').text(FF);
+          $('#Fidel_Seventh').text(FO);
+          $('#Fidelat_Special').hide();
+        }
+        else if(selectedFidelFamily === "Fidel_PE"){
+          $('#Fidel_First').text(PE);
+          $('#Fidel_Second').text(PU);
+          $('#Fidel_Third').text(PI);
+          $('#Fidel_Fourth').text(PA);
+          $('#Fidel_Fifth').text(PIE);
+          $('#Fidel_Sixth').text(PP);
+          $('#Fidel_Seventh').text(PO);
+          $('#Fidelat_Special').hide();
+        }
+    });
+    
+    $('#Fidel_First').click(function() {
+      $("#commentt").append($('#Fidel_First').text()).focus();
+    });
+    $('#Fidel_Second').click(function(){
+      $("#commentt").append($('#Fidel_Second').text()).focus();
+    });
+    $('#Fidel_Third').click(function(){
+      $("#commentt").append($('#Fidel_Third').text()).focus();
+    });
+    $('#Fidel_Fourth').click(function(){
+      $("#commentt").append($('#Fidel_Fourth').text()).focus();
+    });
+    $('#Fidel_Fifth').click(function(){
+      $("#commentt").append($('#Fidel_Fifth').text()).focus();
+    });
+    $('#Fidel_Sixth').click(function(){
+      $("#commentt").append($('#Fidel_Sixth').text()).focus();
+    });
+    $('#Fidel_Seventh').click(function(){
+      $("#commentt").append($('#Fidel_Seventh').text()).focus();
+    });
+    $('#Fidel_Eighth').click(function(){
+      $("#commentt").append($('#Fidel_Eighth').text()).focus();
+    });
+    $('#Fidel_Ninth').click(function(){
+      $("#commentt").append($('#Fidel_Ninth').text()).focus();
+    });
+    $('#Fidel_Tenth').click(function(){
+      $("#commentt").append($('#Fidel_Tenth').text()).focus();
+    });
+    $('#Fidel_Eleventh').click(function(){
+      $("#commentt").append($('#Fidel_Eleventh').text()).focus();
+    });
+    $('#Fidel_Twelfth').click(function(){
+      $("#commentt").append($('#Fidel_Twelfth').text()).focus();
+    });
+
+    // Attach a space;
+    $('#clickForSpace').click(function(){
+      $("#commentt").append(giveMeMySpace).focus();
+    });
+
+    $('#clickForCopy').click(function(){
+      var copyText = document.getElementById("commentt");
+      copyText.select();
+      document.execCommand("Copy");
+      alert("Copied to Clipboard!" + copyText.value);
+    });
+    
+
+    $("#comment").keypress(function(key){
+
+   // Resetting the Field.
+
+    if(key.charCode == 32)
+    {
+      $("#commentt").append(giveMeMySpace);
+    }
+    if(twoFidelat.length == 2) {
+      twoFidelat.length = 0;
+    } 
+    if(threeFidelat.length == 3) {
+      threeFidelat.length = 0;
+    } 
+
+    if(key.charCode !== 32)
+    {
+      twoFidelat.push(key.originalEvent.key);//.toUpperCase());
+    }
+
+    if(key.charCode !== 32)
+    {
+      threeFidelat.push(key.originalEvent.key);//.toUpperCase());
+    }
+    console.log(threeFidelat);
+   
+    if((twoFidelat.length == 2)){
+      var fidel = twoFidelat.join('').toUpperCase();
+      var samllFidel = fidel.toLowerCase();
+
+      switch(fidel) {
+        /*(1) THE H FAMILY*/
+        case "HE" : $("#commentt").append(HE);
+          break;
+        case "HU" : $("#commentt").append(HU);
+          break;
+        case "HI" : $("#commentt").append(HI);
+          break;
+        case "HA" : $("#commentt").append(HA);
+          break;
+        case "HH" : $("#commentt").append(HH);
+          break;
+        case "HO" : $("#commentt").append(HO);
+          break;
+        /*(2) THE L FAMILY*/
+        case "LE" : $("#commentt").append(LE);
+          break;
+        case "LU" : $("#commentt").append(LU);
+          break;
+        case "LI" : $("#commentt").append(LI);
+          break;
+        case "LA" : $("#commentt").append(LA);
+          break;
+        case "LL" : $("#commentt").append(LL);
+          break;
+        case "LO" : $("#commentt").append(LO);
+          break;
+        /*(4) THE M FAMILY*/
+        case "ME" : $("#commentt").append(ME);
+          break;
+        case "MU" : $("#commentt").append(MU);
+          break;
+        case "MI" : $("#commentt").append(MI);
+          break;
+        case "MA" : $("#commentt").append(MA);
+          break;
+        case "MM" : $("#commentt").append(MM);
+          break;
+        case "MO" : $("#commentt").append(MO);
+          break;
+        /*(6) THE R FAMILY*/
+        case "RE" : $("#commentt").append(LE);
+          break;
+        case "RU" : $("#commentt").append(LU);
+          break;
+        case "RI" : $("#commentt").append(LI);
+          break;
+        case "RA" : $("#commentt").append(LA);
+          break;
+        case "RR" : $("#commentt").append(LL);
+          break;
+        case "RO" : $("#commentt").append(LO);
+          break;
+        /*(7) THE S FAMILY*/
+        case "SE" : $("#commentt").append(SE);
+          break;
+        case "SU" : $("#commentt").append(SU);
+          break;
+        case "SI" : $("#commentt").append(SI);
+          break;
+        case "SA" : $("#commentt").append(SA);
+          break;
+        case "SS" : $("#commentt").append(SS);
+          break;
+        case "SO" : $("#commentt").append(SO);
+          break;
+        /*(9) THE Q FAMILY*/
+        case "QE" : $("#commentt").append(QE);
+          break;
+        case "QU" : $("#commentt").append(QU);
+          break;
+        case "QI" : $("#commentt").append(QI);
+          break;
+        case "QA" : $("#commentt").append(QA);
+          break;
+        case "QQ" : $("#commentt").append(QQ);
+          break;
+        case "QO" : $("#commentt").append(QO);
+          break;
+         /*(11) THE B FAMILY*/
+        case "BE" : $("#commentt").append(BE);
+          break;
+        case "BU" : $("#commentt").append(BU);
+          break;
+        case "BI" : $("#commentt").append(BI);
+          break;
+        case "BA" : $("#commentt").append(BA);
+          break;
+        case "BB" : $("#commentt").append(BB);
+          break;
+        case "BO" : $("#commentt").append(BO);
+          break;
+         /*(12) THE V FAMILY*/
+        case "VE" : $("#commentt").append(VE);
+          break;
+        case "VU" : $("#commentt").append(VU);
+          break;
+        case "VI" : $("#commentt").append(VI);
+          break;
+        case "VA" : $("#commentt").append(VA);
+          break;
+        case "VV" : $("#commentt").append(VV);
+          break;
+        case "VO" : $("#commentt").append(VO);
+          break;
+         /*(13) THE T FAMILY*/
+        case "TE" : $("#commentt").append(TE);
+          break;
+        case "TU" : $("#commentt").append(TU);
+          break;
+        case "TI" : $("#commentt").append(TI);
+          break;
+        case "TA" : $("#commentt").append(TA);
+          break;
+        case "TT" : $("#commentt").append(TT);
+          break;
+        case "TO" : $("#commentt").append(TO);
+          break;
+        /*(15) THE N FAMILY*/
+        case "NE" : $("#commentt").append(NE);
+          break;
+        case "NU" : $("#commentt").append(NU);
+          break;
+        case "NI" : $("#commentt").append(NI);
+          break;
+        case "NA" : $("#commentt").append(NA);
+          break;
+        case "NN" : $("#commentt").append(NN);
+          break;
+        case "NO" : $("#commentt").append(NO);
+          break;
+         /*(17) THE E FAMILY*/
+        case "EE" : $("#commentt").append(EE);
+          break;
+        case "EU" : $("#commentt").append(EU);
+          break;
+        case "EI" : $("#commentt").append(EI);
+          break;
+        case "EA" : $("#commentt").append(EA);
+          break;
+        case "EE" : $("#commentt").append(EE);
+          break;
+        case "EO" : $("#commentt").append(EO);
+          break;
+         /*(18) THE K FAMILY*/
+        case "KE" : $("#commentt").append(KE);
+          break;
+        case "KU" : $("#commentt").append(KU);
+          break;
+        case "KI" : $("#commentt").append(KI);
+          break;
+        case "KA" : $("#commentt").append(KA);
+          break;
+        case "KK" : $("#commentt").append(KK);
+          break;
+        case "KO" : $("#commentt").append(KO);
+          break;
+         /*(20) THE W FAMILY*/
+        case "WE" : $("#commentt").append(WE);
+          break;
+        case "WU" : $("#commentt").append(WU);
+          break;
+        case "WI" : $("#commentt").append(WI);
+          break;
+        case "WA" : $("#commentt").append(WA);
+          break;
+        case "WW" : $("#commentt").append(WW);
+          break;
+        case "WO" : $("#commentt").append(WO);
+          break;
+        /*(22) THE Z FAMILY*/
+        case "ZE" : $("#commentt").append(ZE);
+          break;
+        case "ZU" : $("#commentt").append(ZU);
+          break;
+        case "ZI" : $("#commentt").append(ZI);
+          break;
+        case "ZA" : $("#commentt").append(ZA);
+          break;
+        case "ZZ" : $("#commentt").append(ZZ);
+          break;
+        case "ZO" : $("#commentt").append(ZO);
+          break;
+        default: 
+          console.log("Arkeni, gega zikonet meftih endika dea tsekithka!");
+      }
+    } 
+
+    if(threeFidelat.length == 3 && threeFidelat[1] == "I"){
+      var fidel = threeFidelat.join('').toUpperCase();
+      console.log(fidel);
+      switch (fidel) {
+        case "MIE": $("#commentt").append(MIE);
+          break;
+        default:
+          break;
+      }
+    }
+  });
+}); 
+
+/*// if(twoFidelat.length == 2){
+    // var lowerCaseFidel = twoFidelat.join('');
+
+    // var strNewString = $('comment').html().replace(lowerCaseFidel,'-');
+    // $('body').html(strNewString);
+
+    // var fidel = twoFidelat.join('').toUpperCase();
+        
+    //   console.log(fidel);
+    //   switch(fidel) {
+    //     case "ME" : $("#commentt").append(ME);
+    //       break;
+    //     case "MU" : $("#commentt").append(MU);
+    //       break;
+    //     // case "MI" : $("#commentt").append(MI);
+    //     //   break;
+    //     case "MA" : $("#commentt").append(MA);
+    //       break;
+    //     // case "MIE" : $("#commentt").append(MIE);
+    //     //   break;
+    //     case "MM" : $("#commentt").append(MM);
+    //       break;
+    //     case "MO" : $("#commentt").append(MO);
+    //       break;
+    //     default: 
+    //       console.log("Arkeni, gega zikonet meftih endika dea tsekithka!");
+    //   }
+    // } else if(twoFidelat.length >= 2 && twoFidelat[1] == 'i'){
+    //     if(threeFidelat.length == 3 && threeFidelat[1] == 'i'){
+    //       var fidel = threeFidelat.join('').toUpperCase();
+    //         switch (fidel) {
+    //         case "MIE" : $("#commentt").append(MIE);
+    //           break;
+    //         default:
+    //         console.log("Arkeni, gega zikonet meftih endika dea tsekithka!");
+    //       }
+    //     } else if(twoFidelat.length == 2 && twoFidelat[1] == 'i' ){
+    //       switch (fidel) {
+    //         case "MI" : $("#commentt").append(MI);
+    //           break;
+    //         default:
+    //         console.log("Arkeni, gega zikonet meftih endika dea tsekithka!");
+    //     }
+      
+    //   } 
+    // }
+    // $('#fidelat_fam_dropdown option[value="Fidel_First"]').text(LE);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Second"]').text(LU); 
+      // $('#fidelat_fam_dropdown option[value="Fidel_Third"]').text(LI);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Fourth"]').text(LA);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Fifth"]').text(LIE);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Sixth"]').text(LL);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Seventh"]').text(LO); 
+      // $('#fidelat_fam_dropdown option[value*="Fidel_Eighth"]').prop('hidden',true);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Nineth"]').prop('hidden',true);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Tenth"]').prop('hidden',true);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Eleventh"]').prop('hidden',true);
+      // $('#fidelat_fam_dropdown option[value="Fidel_Twelfth"]').prop('hidden',true);
+      */
+</script>
